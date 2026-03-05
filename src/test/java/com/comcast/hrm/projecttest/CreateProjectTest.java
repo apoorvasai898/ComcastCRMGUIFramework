@@ -112,4 +112,9 @@ public class CreateProjectTest {
 		//Close the Browser
 		driver.quit();
 	}
+	@Test
+	public void sample()
+	{
+		System.out.println("Executed Sample Test");
+	}
 }
