@@ -1,16 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T16:43:44 IST" name="Default suite" finished-at="2026-02-12T16:44:44 IST" duration-ms="59315">
+  <suite started-at="2026-07-11T15:53:40 IST" name="Default suite" finished-at="2026-07-11T15:53:47 IST" duration-ms="6768">
     <groups>
     </groups>
-    <test started-at="2026-02-12T16:43:44 IST" name="Default test" finished-at="2026-02-12T16:44:44 IST" duration-ms="59315">
+    <test started-at="2026-07-11T15:53:40 IST" name="Default test" finished-at="2026-07-11T15:53:47 IST" duration-ms="6768">
       <class name="com.comcast.hrm.projecttest.CreateProjectTest">
-        <test-method signature="createProject()[pri:0, instance:com.comcast.hrm.projecttest.CreateProjectTest@353d0772]" started-at="2026-02-12T16:43:44 IST" name="createProject" finished-at="2026-02-12T16:44:44 IST" duration-ms="59259" status="PASS">
+        <test-method signature="createProject()[pri:0, instance:com.comcast.hrm.projecttest.CreateProjectTest@4b0b0854]" started-at="2026-07-11T15:53:40 IST" name="createProject" finished-at="2026-07-11T15:53:47 IST" duration-ms="6720" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.xpath: //label[contains(text(),'Project Sta')]/following-sibling::select
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //label[contains(text(),'Project Sta')]/following-sibling::select
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:169)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:41)
+at com.comcast.hrm.generic.webdriverutility.WebDriverUtility.select(WebDriverUtility.java:95)
+at com.comcast.hrm.objectrepositoryutility.CreateProjectPage.createProject(CreateProjectPage.java:52)
+at com.comcast.hrm.projecttest.CreateProjectTest.createProject(CreateProjectTest.java:97)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProject -->
+        <test-method signature="sample()[pri:0, instance:com.comcast.hrm.projecttest.CreateProjectTest@4b0b0854]" started-at="2026-07-11T15:53:47 IST" name="sample" finished-at="2026-07-11T15:53:47 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample -->
       </class> <!-- com.comcast.hrm.projecttest.CreateProjectTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
