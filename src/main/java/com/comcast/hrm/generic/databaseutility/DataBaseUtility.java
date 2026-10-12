@@ -10,7 +10,7 @@ import com.mysql.jdbc.Driver;
 
 public class DataBaseUtility {
 	Connection conn = null;
-	ResultSet result = null;
+	ResultSet result;
 		
 	//Get DBCon by passing url,username and password arguments
 	public void getDbConnection(String url,String username,String password) throws SQLException
