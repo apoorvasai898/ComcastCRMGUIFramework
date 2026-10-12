@@ -101,7 +101,7 @@ public class CreateProjectTest {
 		ce.verifyProjCtn(projName);
 		
 		//Verify Project Creation in DataBase
-		dbutility.getDbConnection("jdbc:mysql://49.249.28.218:3307/ninza_hrm","root@%","root");
+		dbutility.getDbConnection("jdbc:mysql://49.249.29.218:3307/ninza_hrm","root@%","root");
 		ResultSet resultset = dbutility.executeSelectQuery("select * from project");
 		
 		dbutility.ProjectIsCreatedOndb(resultset,projName);
